@@ -1,0 +1,415 @@
+package tamilnadu.chennai;
+
+public class PatternPrograms {
+	
+	public static void main(String[] args) {
+	    // TODO Auto-generated method stub
+
+	    int c = 5;
+	    PatternPrograms pp = new PatternPrograms();
+
+	    // pp.printNumbers(c);
+
+	    pp.pettern_e();
+	    System.out.println("----------------------------------");
+	    pp.pattern_l();
+	    System.out.println("----------------------------------");
+	    pp.pattern_a();
+	    System.out.println("----------------------------------");
+	    pp.pattern_y();
+	    System.out.println("----------------------------------");
+	    pp.pattern_a();
+	    System.out.println("----------------------------------");
+	    pp.pattern_p();
+	    System.out.println("----------------------------------");
+	    pp.pettern_e();
+	    System.out.println("----------------------------------");
+	    pp.pattern_r();
+	    System.out.println("----------------------------------");
+	    pp.pattern_u();
+	    System.out.println("----------------------------------");
+	    pp.pattern_m();
+	    System.out.println("----------------------------------");
+	    pp.pattern_a();
+	    System.out.println("----------------------------------");
+	    pp.pattern_l();
+	    System.out.println("----------------------------------");
+	}
+
+	private void pattern_m() {
+	    // TODO Auto-generated method stub
+
+	    for (int row = 1; row <= 9; row++) {
+
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row >= 2) {
+	                if (col == 1 || col == 9)
+
+	                {
+	                    System.out.print("* ");
+
+	                }
+	            }
+
+	            if (row == 1) {
+
+	                if (col == 1 || col == 9) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+
+	            if (row == 2) {
+
+	                if (col == 2 || col == 8) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+
+	            if (row == 3) {
+
+	                if (col == 3 || col == 7) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 4) {
+
+	                if (col == 4 || col == 6) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 5) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                }
+
+	                else {
+
+	                    System.out.print("  ");
+	                }
+
+	            }
+
+	        }
+
+	        System.out.println("  ");
+
+	    }
+
+	}
+
+	private void pattern_u() {
+	    // TODO Auto-generated method stub
+
+	    for (int row = 1; row <= 9; row++) {
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (col == 1 || col == 9 || row == 9) {
+
+	                System.out.print("* ");
+
+	            } else {
+	                System.out.print("  ");
+	            }
+
+	        }
+	        System.out.println("  ");
+	    }
+	}
+
+	private void pattern_r() {
+	    // TODO Auto-generated method stub
+
+	    int row = 1;
+	    while (row <= 8) {
+	        for (int col = 1; col <= 5; col++) {
+
+	            if (row == 1 || row == 4 || col == 1) {
+
+	                System.out.print("* ");
+	            } else {
+	                System.out.print(" ");
+	            }
+
+	            if (row == 5) {
+
+	                if (col == 2) {
+
+	                    System.out.print("* ");
+	                }
+	            }
+
+	            if (row == 6) {
+
+	                if (col == 3) {
+
+	                    System.out.print("* ");
+	                }
+	            }
+
+	            if (row == 7) {
+
+	                if (col == 4) {
+
+	                    System.out.print("* ");
+	                }
+	            }
+	            if (row == 8) {
+
+	                if (col == 5) {
+
+	                    System.out.print("*  ");
+	                }
+	            }
+
+	            if (row == 2 || row == 3) {
+
+	                if (col == 5) {
+	                    System.out.print("  * ");
+	                }
+
+	            }
+	        }
+	        row++;
+	        System.out.println("  ");
+	    }
+	}
+
+	private void pattern_p() {
+	    // TODO Auto-generated method stub
+
+	    int row = 1;
+	    while (row <= 9) {
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row == 1 || row == 4 || col == 1) {
+
+	                System.out.print("* ");
+
+	            } else {
+	                System.out.print("  ");
+	            }
+
+	            if (row == 2 || row == 3) {
+
+	                if (col == 8) {
+	                    System.out.print("* ");
+	                }
+	            }
+	        }
+	        System.out.println("  ");
+	        row++;
+	    }
+
+	}
+
+	private void pattern_y() {
+	    // TODO Auto-generated method stub
+
+	    int row = 1;
+	    while (row <= 9) {
+
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row == 1) {
+
+	                if (col == 1 || col == 9) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+
+	            if (row == 2) {
+
+	                if (col == 2 || col == 8) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+
+	            if (row == 3) {
+
+	                if (col == 3 || col == 7) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 4) {
+
+	                if (col == 4 || col == 6) {
+
+	                    System.out.print("* ");
+	                } else {
+
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 5) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                }
+
+	                else {
+
+	                    System.out.print("  ");
+	                }
+
+	            }
+
+	            if (row == 6) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                } else {
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 7) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                } else {
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 8) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                } else {
+	                    System.out.print("  ");
+	                }
+	            }
+	            if (row == 9) {
+
+	                if (col == 5) {
+
+	                    System.out.print("* ");
+	                } else {
+	                    System.out.print("  ");
+	                }
+	            }
+	        }
+
+	        System.out.println("  ");
+	        row++;
+	    }
+	}
+
+	private void pattern_a() {
+	    // TODO Auto-generated method stub
+
+	    int row = 1;
+	    while (row <= 9) {
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row == 1 || row == 5 || col == 1 || col == 9) {
+
+	                System.out.print("* ");
+	            } else {
+
+	                System.out.print("  ");
+	            }
+	        }
+	        row++;
+	        System.out.println("  ");
+
+	    }
+
+	}
+
+	private void pattern_l() {
+	    // TODO Auto-generated method stub
+	    int row = 1;
+	    while (row <= 9) {
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row == 9 || col == 1) {
+
+	                System.out.print("* ");
+	            } else {
+
+	                System.out.print("  ");
+	            }
+	        }
+	        row++;
+	        System.out.println("  ");
+	    }
+
+	}
+
+	private void printNumbers(int c) {
+	    // TODO Auto-generated method stub
+
+	    /*
+	     * int a = 1; while (a <= 5)
+	     */
+
+	    for (int a = 1; a <= 3; a++)
+
+	    {
+	        System.out.println();
+	        for (c = 1; c <= 5; c++) {
+
+	            System.out.print(c + " ");
+	        }
+
+	        // a++;
+	    }
+
+	}
+
+	private void pettern_e() {
+
+	    for (int row = 1; row <= 9; row++) {
+
+	        for (int col = 1; col <= 9; col++) {
+
+	            if (row == 1 || row == 5 || row == 9 || col == 1) {
+	                System.out.print("* ");
+	            } else {
+
+	                System.out.print(" ");
+	            }
+
+	        }
+
+	        System.out.println();
+
+	    }
+
+	}
+
+}
